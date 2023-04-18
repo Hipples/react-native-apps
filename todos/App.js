@@ -1,4 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
+import { NavigationContainer } from '@react-navigation/native';
 import { Component } from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 
@@ -68,22 +69,24 @@ class App extends Component {
   render() {
     const { inputValue, todos, type } = this.state;
     return (
-      <View style={styles.container}>
-        <ScrollView keyboardShouldPersistTaps='always' style={styles.content}>
-          <StatusBar />
-          <Heading />
-          <Input 
-            inputValue={inputValue}
-            inputChange={(text) => this.inputChange(text)} />
-          <TodoList 
-            type={type}
-            toggleComplete={this.toggleComplete}
-            deleteTodo={this.deleteTodo}
-            todos={todos} />
-          <Button submitTodo={this.submitTodo} />
-        </ScrollView>
-        <TabBar type={type} setType={this.setType} />
-      </View>
+      <NavigationContainer>
+        <View style={styles.container}>
+          <ScrollView keyboardShouldPersistTaps='always' style={styles.content}>
+            <StatusBar />
+            <Heading />
+            <Input 
+              inputValue={inputValue}
+              inputChange={(text) => this.inputChange(text)} />
+            <TodoList 
+              type={type}
+              toggleComplete={this.toggleComplete}
+              deleteTodo={this.deleteTodo}
+              todos={todos} />
+            <Button submitTodo={this.submitTodo} />
+          </ScrollView>
+          <TabBar type={type} setType={this.setType} />
+        </View>
+      </NavigationContainer>
     );
   }
 }
