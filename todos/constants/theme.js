@@ -1,4 +1,4 @@
-const colors = {
+export const colors = {
     primary: '#F5F5F5',     //off-white
     secondary: '#EDEDED',  
     tertiary: '#AF2F2F',  //pastel pink --> (opacity=0.2)
@@ -9,7 +9,7 @@ const colors = {
     lightGray: '#EFEFEF'
 }
 
-const sizes = {
+export const sizes = {
     xxsmall: 5,
     xsmall: 10,
     small: 15,
