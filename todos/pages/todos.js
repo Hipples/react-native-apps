@@ -70,7 +70,7 @@ class Todos extends Component {
     return (
       <View style={styles.container}>
         <ScrollView keyboardShouldPersistTaps='always' style={styles.content}>
-          <StatusBar />
+          <StatusBar backgroundColor='#AF2F2F' />
           <Heading />
           <Input 
             inputValue={inputValue}
