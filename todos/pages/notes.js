@@ -7,6 +7,10 @@ const Notes = ({ navigation }) => (
   <ScrollView contentContainerStyle={styles.container}>
     <View style={styles.content}>
       <Heading />
+      <NavButton />
+      <Input />
+      <SubmitButton />
+      <NoteCards />
       <Button onPress={() => navigation.navigate('Home')} title="Home"/>
     </View>
   </ScrollView>
