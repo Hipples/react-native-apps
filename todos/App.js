@@ -6,11 +6,13 @@ import TodosScreen from './pages/todos';
 const Stack = createNativeStackNavigator();
 
 const App = () => {
-  <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="todos" component={TodosScreen} />
-    </Stack.Navigator>
-  </NavigationContainer>
+  return(
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="todos" component={TodosScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 }
 
 export default App;
