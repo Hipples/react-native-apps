@@ -10,7 +10,7 @@ import TabBar from '../components/todos/tab-bar';
 
 let todoIndex = 0;
 
-class TodosScreen extends Component {
+class Todos extends Component {
   constructor() {
     super();
     this.state = {
@@ -100,4 +100,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default TodosScreen;
+export default Todos;

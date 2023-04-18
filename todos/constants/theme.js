@@ -6,7 +6,15 @@ export const colors = {
     white: '#FFFFFF',
     black: '#000000',
     gray: '#666666',
-    lightGray: '#EFEFEF'
+
+    pressed: '#EFEFEF',
+    default: '#FFFFFF'
+}
+
+export const noteColors = {
+    primary: '#F5F5F7',  // off-white
+    secondary: '#C1B6AC', // beige
+    tertiary: '#A7B3C8'  // blue-gray
 }
 
 export const sizes = {
@@ -18,5 +26,6 @@ export const sizes = {
     xlarge: 30,
     xxlarge: 50,
 
-    pageHeading: 75
+    heading: 75,
+    header: 80
 }
