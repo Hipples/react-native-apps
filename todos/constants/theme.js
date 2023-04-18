@@ -1,20 +1,52 @@
-export const colors = {
-    primary: '#F5F5F5',     //off-white
-    secondary: '#EDEDED',  
-    tertiary: '#AF2F2F',  //pastel pink --> (opacity=0.2)
+import { useState } from 'react-native';
 
-    white: '#FFFFFF',
-    black: '#000000',
-    gray: '#666666',
+//main colors for app
+const themeColors = {
+    brightBlue: "#51e2f5",
+    blueGreen: "#9df9ef",
+    dustyWhite: "#edf756",  //background
+    pinkSand: "#ffa8B6",
+    darkSand: "#a28089",
 
-    pressed: '#EFEFEF',
-    default: '#FFFFFF'
+    white: "#FFFFFF",
+    lightGray: "",
+    gray: "",
+    darkGray: "",
+    black: "#000000"
+}
+
+const DEFAULT_THEME = {
+    dark: false,
+    colors: {
+        primary: "#51E2F5",  //bright blue
+        background: "#EDF756",  //dusty white
+        card: "#9DF9EF",  //blue green
+        text: "#000000",  //black
+        border: "#A28089",  //dark sand
+        notification: "#FFA8B6"
+    }
+}
+
+export const SPACING = {
+    base: 15,
+    double: 30
+}
+
+export const COLORS = {
+        primary: "#51E2F5",  //bright blue
+        background: "#EDF756",  //dusty white
+        card: "#9DF9EF",  //blue green
+        text: "#000000",  //black
+        border: "#A28089",  //dark sand
+        notification: "#FFA8B6"  // pink sand
 }
 
 export const noteColors = {
-    primary: '#F5F5F7',  // off-white
-    secondary: '#C1B6AC', // beige
-    tertiary: '#A7B3C8'  // blue-gray
+    background: '#F5F5F7',  //off-white
+    border: '#C1B6AC',  //beige
+    primary: '#809BCE',  //blue-gray
+    text: '#19191A',  //dark gray
+    card: '#E8E3DF'  //light beige
 }
 
 export const sizes = {
