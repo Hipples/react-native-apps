@@ -1,4 +1,5 @@
 import { View, Text, Pressable, StyleSheet } from 'react-native';
+import { colors, sizes } from '../../constants/theme';
 
 const Button = ({ submitTodo }) => (
     <View style={styles.buttonContainer}>
@@ -16,26 +17,26 @@ const Button = ({ submitTodo }) => (
 const styles = StyleSheet.create({
     buttonContainer: {
         flex: 1,
-        marginVertical: 15,
+        marginVertical: sizes.small,
         width: "55%",
-        marginRight: 20,
+        marginRight: sizes.medium,
         alignSelf: 'flex-end'
     },
     button: {
         justifyContent: 'center',
         alignItems: 'center',
-        height: 50,
+        height: sizes.xxlarge,
         elevation: 3
     },
     pressed: {
-        backgroundColor: '#EFEFEF'
+        backgroundColor: colors.lightGray
     },
     default: {
-        backgroundColor: 'white'
+        backgroundColor: colors.white
     },
     buttonText: {
         fontWeight: 600,
-        color: '#666666'
+        color: colors.gray
     }
 })
 
