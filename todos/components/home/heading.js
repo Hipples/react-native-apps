@@ -1,8 +1,11 @@
 import { View, Text, StyleSheet } from 'react-native';
 
 const Heading = () => (
-    <View style={styles.header}>
-        <Text style={styles.heading}>Todos {"\<"}<Text style={{fontStyle: 'italic'}}>Expanded</Text></Text>
+    <View style={styles.header} >
+        <Text style={styles.heading} adjustsFontSizeToFit={true} >
+            Todos {"\<"}
+            <Text style={{fontStyle: 'italic'}}>Expanded</Text>
+        </Text>
     </View>
 );
 
@@ -12,9 +15,9 @@ const styles = StyleSheet.create({
     },
     heading: {
         textAlign: 'center',
-        fontSize: 80,
+        fontSize: 40,
         fontWeight: "bold",
-        color: '#69c'
+        color: '#000'
     }
 });
 
