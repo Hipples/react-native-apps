@@ -1,8 +1,6 @@
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 
-
-
-const NavButton = ({ navigation, Page }) => (
+const MenuButton = ({ navigation, Page }) => (
     <View style={styles.container}>
         <Pressable
         onPress={() => navigation.navigate(Page)} 
@@ -43,4 +41,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default NavButton;
+export default MenuButton;
