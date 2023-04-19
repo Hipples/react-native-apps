@@ -7,9 +7,8 @@ const Button = ({ submitTodo }) => (
             onPress={submitTodo}
             style={({pressed}) => [
                 styles.button, 
-                pressed ? styles.pressed : styles.default]}              
-        >
-                <Text style={styles.buttonText}>Submit</Text>
+                pressed ? styles.pressed : styles.default]} >
+            <Text style={styles.buttonText}>Submit</Text>
         </Pressable>
     </View>
 );
@@ -38,6 +37,6 @@ const styles = StyleSheet.create({
         fontWeight: 600,
         color: colors.gray
     }
-})
+});
 
 export default Button;
