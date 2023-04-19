@@ -1,7 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-import { noteColors, sizes } from '../../constants/theme';
-
 const Heading = () => (
     <View style={styles.header}>
         <Text style={styles.heading}>Notes</Text>
@@ -10,12 +8,13 @@ const Heading = () => (
 
 const styles = StyleSheet.create({
     header: {
-        marginTop: sizes.header
+        marginTop: 80
     },
     heading: {
         textAlign: 'center',
-        fontSize: sizes.heading,
-        color: noteColors.tertiary
+        fontSize: 72,
+        fontWeight: 100,
+        color: '#A7B3C8'
     }
 });
 

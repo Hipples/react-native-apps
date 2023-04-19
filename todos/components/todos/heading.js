@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     headerText: {
         textAlign: 'center',
         fontSize: 72,
+        fontWeight: 100,
         color: 'rgba(175, 47, 47, 0.25)',
     }
 });

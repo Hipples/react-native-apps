@@ -1,17 +1,11 @@
-import { ScrollView, View, Text, Button } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
-import { noteColors, sizes } from '.././constants/theme';
 import Heading from '../components/notes/heading';
 
-const Notes = ({ navigation }) => (
+const Notes = ({ }) => (
   <ScrollView contentContainerStyle={styles.container}>
     <View style={styles.content}>
       <Heading />
-      <NavButton />
-      <Input />
-      <SubmitButton />
-      <NoteCards />
-      <Button onPress={() => navigation.navigate('Home')} title="Home"/>
     </View>
   </ScrollView>
 );
@@ -19,13 +13,12 @@ const Notes = ({ navigation }) => (
 const styles = {
   container: {
     flex: 1,
-    backgroundColor: noteColors.primary
+    backgroundColor: '#F5F5F7'
   },
   content: {
     flex: 1,
-    paddingTop: sizes.xxlarge
-  },
-
+    paddingTop: 50
+  }
 }
 
 export default Notes;
