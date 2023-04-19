@@ -2,6 +2,7 @@ import { ScrollView, View } from 'react-native';
 
 import Heading from '../components/notes/heading';
 import Input from '../components/notes/input';
+
 // import NoteBoard from '../components/notes/noteboard';
 
 const Notes = ({ }) => (
