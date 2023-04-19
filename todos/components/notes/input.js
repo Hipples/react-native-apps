@@ -14,7 +14,7 @@ const Input = ({ note, setNote }) => {
                     selectionColor="#CACACA"
                     onChangeText={setNote} />       
             </View>
-            <View style={{alignSelf: 'flex-end'}}><SubmitButton submit={note} /></View>
+            <View style={styles.submitButton}><SubmitButton submit={note} /></View>
         </View>
     );
 }
@@ -35,7 +35,10 @@ const styles = StyleSheet.create({
     },
     input: {
         padding: 10
+    },
+    submitButton: {
+        alignSelf: 'flex-end'
     }
-})
+});
 
 export default Input;

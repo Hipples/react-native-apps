@@ -12,11 +12,24 @@ const SubmitButton = ({ submit }) => (
 );
 
 const styles = StyleSheet.create({
-    container: {},
-    button: {},
-    default: {},
-    pressed: {},
-    buttonText: {}
+    container: {
+        margin: 10,       
+    },
+    button: {
+        borderWidth: 4,
+        padding: 20,
+        borderRadius: 360
+    },
+    default: {
+        backgroundColor: '#00FF00'
+    },
+    pressed: {
+        backgroundColor: '#0013220'
+    },
+    buttonText: {
+        fontSize: 15,
+        fontWeight: 'bold'
+    }
 });
 
 export default SubmitButton;
