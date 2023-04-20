@@ -1,6 +1,6 @@
 const images = {
     homeBackground: {
-        uri: require('../assets/background-home.jpg')
+        uri: '../assets/background-home.jpg'
     }
 }
 
