@@ -1,0 +1,1 @@
+export const homeBackground = { uri: require('../assets/background-home.jpg')}

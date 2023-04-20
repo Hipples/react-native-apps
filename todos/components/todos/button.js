@@ -1,5 +1,5 @@
 import { View, Text, Pressable, StyleSheet } from 'react-native';
-import { colors, sizes } from '../../constants/theme';
+import { colors, sizes } from '../../constants/themes';
 
 const Button = ({ submitTodo }) => (
     <View style={styles.buttonContainer}>
