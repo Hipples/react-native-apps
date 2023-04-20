@@ -1,5 +1,6 @@
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 
+//click to change screens
 const MenuButton = ({ navigation, Page }) => (
     <View style={styles.container}>
         <Pressable
@@ -13,6 +14,7 @@ const MenuButton = ({ navigation, Page }) => (
     </View> 
 );
 
+//menu button styles 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
