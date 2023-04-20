@@ -9,7 +9,7 @@ const MenuButton = ({ navigation, Page }) => (
             styles.button, 
             pressed ? styles.pressed : styles.default]}              
     >
-            <Text style={styles.buttonText}>{ Page }</Text>
+            <Text style={styles.buttonText}>{"my"}{ Page }</Text>
         </Pressable>
     </View> 
 );
@@ -26,9 +26,10 @@ const styles = StyleSheet.create({
     button: {
         justifyContent: 'center',
         alignItems: 'center',
-        height: 50,
+        height: "50%",
         borderColor: 'black',
-        borderWidth: 3
+        borderWidth: 1,
+        borderRadius: 10
     },
     pressed: {
         backgroundColor: 'gray'
@@ -37,9 +38,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white'
     },
     buttonText: {
-        fontWeight: 600,
-        color: "#787878",
-        fontSize: 30,
+        fontSize: 20,
     }
 })
 

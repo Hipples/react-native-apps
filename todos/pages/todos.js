@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import { Component } from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
 
@@ -70,7 +69,6 @@ class Todos extends Component {
     return (
       <View style={styles.container}>
         <ScrollView keyboardShouldPersistTaps='always' style={styles.content}>
-          <StatusBar backgroundColor='#AF2F2F' />
           <Heading />
           <Input 
             inputValue={inputValue}
