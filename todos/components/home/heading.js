@@ -3,21 +3,21 @@ import { View, Text, StyleSheet } from 'react-native';
 const Heading = () => (
     <View style={styles.header} >
         <Text style={styles.heading} adjustsFontSizeToFit={true} >
-            Todos {"\<"}
-            <Text style={{fontStyle: 'italic'}}>Expanded</Text>
+            todos++
         </Text>
     </View>
 );
 
 const styles = StyleSheet.create({
     header: {
-        marginTop: 50
+        marginTop: 150
     },
     heading: {
         textAlign: 'center',
-        fontSize: 40,
-        fontWeight: "bold",
-        color: '#000'
+        fontSize: 75,
+        fontWeight: "100",
+        color: '#000',
+        fontStyle: 'italic'
     }
 });
 

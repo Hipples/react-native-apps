@@ -22,7 +22,7 @@ const Notes = () => {
 const styles = {
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F7'
+    //backgroundColor: '#F5F5F7'
   },
   content: {
     flex: 1,
