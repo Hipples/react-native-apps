@@ -11,10 +11,10 @@ const MyTheme = {
   dark: false,
   colors: {
     primary: '#B52',  //orange
-    background: '#975',
-    card: '#753A',
+    background: '#7531',  //white-tan
+    card: '#07F5',//'#753A',
     text: '#000',
-    border: '#000',
+    border: '#B00',
     notification: '#000'
   }
 }

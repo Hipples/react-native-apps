@@ -27,9 +27,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         height: "50%",
-        borderColor: 'black',
-        borderWidth: 1,
-        borderRadius: 10
+        borderWidth: 1.5,
+        borderRadius: 10,
+        elevation: 10
     },
     pressed: {
         backgroundColor: 'gray'

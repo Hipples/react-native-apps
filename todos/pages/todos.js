@@ -90,7 +90,6 @@ class Todos extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F5'  //off-white
   },
   content: {
     flex: 1,
