@@ -1,9 +1,5 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-//attempt at persistence for todolist
-// import { useState, useEffect } from 'react';
-// import { Linking, Platform} from 'react-native';
-// import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import Home from './pages/home';
 import Todos from './pages/todos';

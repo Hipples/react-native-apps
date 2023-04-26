@@ -13,6 +13,7 @@ const SubmitButton = ({ submit }) => (
 
 const styles = StyleSheet.create({
     container: {
+        flex: 0.5,
         margin: 10,       
     },
     button: {

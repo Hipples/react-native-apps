@@ -4,25 +4,32 @@ import { ScrollView, View } from 'react-native';
 import Heading from '../components/notes/heading';
 import Input from '../components/notes/input';
 
-// import NoteBoard from '../components/notes/noteboard';
+let noteIndex = 1;
 
 const Notes = () => {
+  const [notes, setNotes] = useState([]);
+
+  const submitNote = (text) => {
+    const note = {id: noteIndex++, message: text}
+    setNotes([...notes, note]);
+    console.log(notes);
+  }
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.content}>
         <Heading />
-        <Input />
-        {/* <NoteBoard /> */}
+        <Input 
+          onSubmit={submitNote} />
       </View>
     </ScrollView>
-  )
+  );
 }
 
 const styles = {
   container: {
     flex: 1,
-    //backgroundColor: '#F5F5F7'
+    backgroundColor: '#F5F5F7'
   },
   content: {
     flex: 1,

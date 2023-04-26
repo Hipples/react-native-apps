@@ -2,19 +2,21 @@ import { View, TextInput, StyleSheet } from 'react-native';
 
 import SubmitButton from '../common/submit-button';
 
-const Input = ({ note, setNote }) => {
+const Input = ( onSubmit ) => {
+    const [ text, setText ] = useState();
+
     return (
         <View style={styles.container}>
             <View style={styles.inputContainer}>
                 <TextInput 
-                    value={note}
+                    value={text}
                     style={styles.input}
                     placeholder="Want to leave a sticky note?"
                     placeholderTextColor="#666"
                     selectionColor="#CACACA"
-                    onChangeText={setNote} />       
+                    onChangeText={setText} />       
             </View>
-            <View style={styles.submitButton}><SubmitButton submit={note} /></View>
+            <SubmitButton submit={onSubmit} />
         </View>
     );
 }
@@ -35,9 +37,6 @@ const styles = StyleSheet.create({
     },
     input: {
         padding: 10
-    },
-    submitButton: {
-        alignSelf: 'flex-end'
     }
 });
 
