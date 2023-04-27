@@ -1,9 +1,10 @@
+import { useState } from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 
 import SubmitButton from '../common/submit-button';
 
-const Input = ( onSubmit ) => {
-    const [ text, setText ] = useState();
+const Input = ({ placeholder, onSubmit }) => {
+    const [text, setText] = useState()
 
     return (
         <View style={styles.container}>
@@ -11,12 +12,21 @@ const Input = ( onSubmit ) => {
                 <TextInput 
                     value={text}
                     style={styles.input}
-                    placeholder="Want to leave a sticky note?"
+                    placeholder={placeholder}
                     placeholderTextColor="#666"
                     selectionColor="#CACACA"
-                    onChangeText={setText} />       
+                    onChangeText={(value) => setText(value)}
+                    onSubmitEditing={() => {
+                        if (!text) return //do nothing if no text
+                        onSubmit(text)
+                        setText('')
+                    }} />       
             </View>
-            <SubmitButton submit={onSubmit} />
+            <SubmitButton submit={() => {
+                if (!text) return //do nothing if no text
+                onSubmit(text)
+                setText('')
+                }} />
         </View>
     );
 }

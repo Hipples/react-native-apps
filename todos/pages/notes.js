@@ -1,26 +1,26 @@
-import { useState } from 'react';
+import { useReducer } from 'react';
 import { ScrollView, View } from 'react-native';
+
+import { 
+  notesReducer, 
+  actionCreators, 
+  initialState } from '../constants/notes/notes-reducer';
 
 import Heading from '../components/notes/heading';
 import Input from '../components/notes/input';
-
-let noteIndex = 1;
+import NoteList from '../components/notes/note-list';
 
 const Notes = () => {
-  const [notes, setNotes] = useState([]);
-
-  const submitNote = (text) => {
-    const note = {id: noteIndex++, message: text}
-    setNotes([...notes, note]);
-    console.log(notes);
-  }
+  const [state, dispatch] = useReducer(notesReducer, initialState);
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.content}>
         <Heading />
         <Input 
-          onSubmit={submitNote} />
+          placeholder={"Type a note, the press submit or hit enter!"}
+          onSubmit={(title) => dispatch(actionCreators.add(title))} />
+        <NoteList notes={state.notes} />
       </View>
     </ScrollView>
   );
